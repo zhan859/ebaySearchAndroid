@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/xiweiliu/Documents/COURSES/CS571/hw/final%20project/EbaySearch/facebook/res/values-de/messenger_button_strings.xml -->
+    <eat-comment/>
+    <string name="messenger_send_button_text">Senden</string>
+</resources>

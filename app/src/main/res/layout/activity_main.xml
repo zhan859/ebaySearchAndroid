@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/headline"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="eBay Search"
+        android:textColor="@color/my_blue"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Keyword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/headline"
+        android:layout_marginTop="50dp"
+        android:text="Keyword" />
+
+    <EditText
+        android:id="@+id/etKeyword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Keyword"
+        android:layout_marginLeft="70dp"
+        android:layout_toEndOf="@+id/Keyword"
+        android:layout_toRightOf="@+id/Keyword" />
+
+    <TextView
+        android:id="@+id/PriceFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Keyword"
+        android:layout_marginTop="20dp"
+        android:text="Price From" />
+
+    <EditText
+        android:id="@+id/etPriceFrom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/PriceFrom"
+        android:layout_marginLeft="70dp"
+        android:layout_toEndOf="@+id/Keyword"
+        android:layout_toRightOf="@+id/Keyword"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <TextView
+        android:id="@+id/PriceTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PriceFrom"
+        android:layout_marginTop="20dp"
+        android:text="Price To" />
+
+    <EditText
+        android:id="@+id/etPriceTo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/PriceTo"
+        android:layout_marginLeft="70dp"
+        android:layout_toEndOf="@+id/Keyword"
+        android:layout_toRightOf="@+id/Keyword"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <TextView
+        android:id="@+id/SortBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/PriceTo"
+        android:layout_marginTop="20dp"
+        android:text="Sort By" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/SortBy"
+        android:layout_marginLeft="70dp"
+        android:layout_toEndOf="@+id/Keyword"
+        android:layout_toRightOf="@+id/Keyword" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_below="@+id/SortBy"
+        android:layout_marginLeft="70dp"
+        android:layout_toEndOf="@+id/Keyword"
+        android:layout_toRightOf="@+id/Keyword"
+        android:onClick="btnClear"
+        android:text="CLEAR" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="30dp"
+        android:onClick="btnClick"
+        android:text="SEARCH" />
+
+    <TextView
+        android:id="@+id/handleKeyword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="@string/handleKeyword"
+        android:textColor="@color/my_red" />
+
+    <TextView
+        android:id="@+id/positiveNumberHandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="@string/positiveNumberHandler"
+        android:textColor="@color/my_red" />
+
+    <TextView
+        android:id="@+id/priceCompareHandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="@string/priceCompareHandler"
+        android:textColor="@color/my_red" />
+
+    <TextView
+        android:id="@+id/noResultHandler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="@string/noResultHandler"
+        android:textSize="22sp"
+        android:textColor="@color/my_red" />
+
+</RelativeLayout>
