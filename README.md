@@ -1,3 +1,3 @@
-# Academic Project
+# Project
 # eBaySearch Android App
-# Edit By Hao Zhang
+# Edit By Brian Zhang
